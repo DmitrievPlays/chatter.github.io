@@ -1,0 +1,156 @@
+body
+{
+  margin: 0;
+  background: rgb(50, 60, 90);
+}
+
+input
+{
+  cursor: pointer;
+}
+
+.header
+{
+  display: flex;
+  background: rgb(80, 100, 180);
+  width: 100%;
+  height: 60px;
+}
+
+.logo
+{
+  float: left;
+  background-image: url("../img/account.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.userName
+{
+  color: white;
+  font-size: 2em;
+  margin: 0 4px;
+  padding: 10px 0px;
+}
+
+.settings
+{
+  position: absolute;
+  right: 0;
+  background-image: url("../img/settings.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  transition: 0.6s;
+}
+
+.settings:hover
+{
+  opacity: 0.6;
+  transform: rotateZ(180deg);
+}
+
+.msg
+{
+  border: none;
+  width: 380px;
+  background: rgb(200, 200, 200);
+  outline: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+.send
+{
+  border: none;
+  width: 40px;
+  background: rgb(100, 120, 160);
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sendLogo
+{
+  background-image: url("../img/right-arrow.svg");
+  background-repeat: no-repeat;
+  margin: 5px;
+  height: 30px;
+}
+
+.send:hover
+{
+  background: rgb(80, 100, 140);
+}
+
+.clear
+{
+  border: none;
+  border-width: 1px;
+  width: 50px;
+  background: rgb(230, 0, 0);
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  font-size: 1.4em;
+}
+
+.clear:hover
+{
+  background: rgb(200, 0, 0);
+}
+
+form
+{
+  display: flex;
+  height: 40px;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.outerWindow
+{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: rgb(30, 40, 60);
+  top: 60px;
+  bottom: 0;
+  /*height: calc(100vh - 60px);*/
+  width: 400px;
+  margin-left: 200px;
+  color: white;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.windowView
+{
+  height: 100%;
+  padding: 20px;
+}
+
+.msginput
+{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.msgbox
+{
+  min-width: 60px;
+  width: max-content;
+  max-width: 300px;
+  min-height: 20px;
+  background: rgb(60, 80, 130);
+  border-radius: 14px 14px 14px 0px;
+  word-wrap: break-word;
+  padding: 10px;
+}
